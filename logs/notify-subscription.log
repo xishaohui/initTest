@@ -1,0 +1,75 @@
+2017-07-31 17:33:34,475 - CREATED
+2017-07-31 17:33:34,475 - OPENED
+2017-07-31 17:33:34,479 - CREATED
+2017-07-31 17:33:34,479 - ---session create-----
+2017-07-31 17:33:34,479 - OPENED
+2017-07-31 17:33:34,486 - SENT: HeapBuffer[pos=0 lim=0 cap=0: empty]
+2017-07-31 17:33:34,487 - -----msg--sent--------
+2017-07-31 17:33:34,487 - RECEIVED: HeapBuffer[pos=0 lim=21 cap=2048: 6D 65 73 73 61 67 65 20 66 72 6F 6D 20 63 6C 69...]
+2017-07-31 17:33:34,495 - SENT: HeapBuffer[pos=0 lim=0 cap=0: empty]
+2017-07-31 17:33:34,495 - RECEIVED: HeapBuffer[pos=0 lim=15 cap=2048: 48 69 2C 69 20 61 6D 20 73 65 72 76 65 72 0A]
+2017-07-31 17:33:34,498 - -----msg  receive-----
+2017-07-31 17:33:34,498 - message:{}Hi,i am server
+2017-07-31 17:33:44,497 - IDLE
+2017-07-31 17:33:54,501 - IDLE
+2017-07-31 17:34:04,505 - IDLE
+2017-07-31 17:34:14,508 - IDLE
+2017-07-31 17:34:24,511 - IDLE
+2017-07-31 17:34:34,514 - IDLE
+2017-07-31 17:34:44,517 - IDLE
+2017-07-31 17:34:54,520 - IDLE
+2017-07-31 17:35:04,522 - IDLE
+2017-07-31 17:35:14,524 - IDLE
+2017-07-31 17:35:24,526 - IDLE
+2017-07-31 17:35:34,530 - IDLE
+2017-07-31 17:35:44,533 - IDLE
+2017-07-31 17:35:54,536 - IDLE
+2017-07-31 17:36:04,538 - IDLE
+2017-07-31 17:36:14,541 - IDLE
+2017-07-31 17:36:24,543 - IDLE
+2017-07-31 17:36:34,546 - IDLE
+2017-07-31 17:36:44,551 - IDLE
+2017-07-31 17:36:54,554 - IDLE
+2017-07-31 17:37:04,558 - IDLE
+2017-07-31 17:37:14,561 - IDLE
+2017-07-31 17:37:24,563 - IDLE
+2017-07-31 17:37:34,566 - IDLE
+2017-07-31 17:37:44,568 - IDLE
+2017-07-31 17:37:51,670 - EXCEPTION :
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:280)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:44)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:695)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:668)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:657)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1141)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2017-07-31 17:37:51,723 - -----exception--------
+2017-07-31 17:37:51,723 - EXCEPTION, please implement minaTest.MsgHanler.exceptionCaught() for proper handling:
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:280)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:44)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:695)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:668)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:657)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1141)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2017-07-31 17:37:51,724 - CLOSED
